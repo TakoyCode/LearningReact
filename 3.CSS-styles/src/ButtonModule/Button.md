@@ -1,0 +1,1 @@
+Example of how you can style using css modules
