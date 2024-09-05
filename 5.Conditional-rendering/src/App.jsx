@@ -1,7 +1,7 @@
 // Conditional rendering = allows you to control what gets rendered
 //                         in your  application based on certian conditions
 //                         (f.eks help you: show, hide, or change components)
-import UserGreeting from "./assets/UserGreeting"
+import UserGreeting from "./UserGreeting"
 function App() {
   return (
     <>
