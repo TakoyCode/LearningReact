@@ -21,8 +21,13 @@ function App() {
 
   return (
     <>
-      <List items={fruits} category="Fruits" />
-      <List items={drinks} category="Drinks" />
+      {/* using the ternery operator to conditionally render the component */}
+      {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
+
+      {/* using logical AND(&&) to conditionally render the component */}
+      {drinks.length > 0 && <List items={drinks} category="Drinks" />}
+
+      {drinks.length > 0 && <List />}
       {/* <FruitList /> */}
     </>
   )

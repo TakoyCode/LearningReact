@@ -1,5 +1,6 @@
-function List(props) {
+import propTypes from 'prop-types'
 
+function List(props) {
     const category = props.category;
     const itemList = props.items;
 
@@ -8,12 +9,21 @@ function List(props) {
         <strong>{i.calories}</strong></li>);
     return (
         <>
-            <ul>
-                <div><strong>{category}</strong></div>
+            <h3 className="list-category"><strong>{category}</strong></h3>
+            <ul className="list-items">
                 {FruitslistItems}
             </ul>
         </>
     );
+}
+
+List.propTypes = {
+    category: propTypes.string()
+}
+
+List.defaultProps = {
+    category: "Placeholder",
+    items: [],
 }
 
 export default List
