@@ -27,7 +27,9 @@ function App() {
       {/* using logical AND(&&) to conditionally render the component */}
       {drinks.length > 0 && <List items={drinks} category="Drinks" />}
 
+      {/* Testing that the default props works */}
       {drinks.length > 0 && <List />}
+
       {/* <FruitList /> */}
     </>
   )
