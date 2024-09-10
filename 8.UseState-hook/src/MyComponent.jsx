@@ -6,9 +6,11 @@ function MyComponent() {
     // it will trigger a rerender of the virtual DOM.
     const [name, setName] = useState("Guest");
 
-    // the value in the useState parameter is the default value of the stateful variable
+    // Usestate returns an array with 2 elements in it
+    // We then use array destructoring to create a stateful variable and a setter function
     const [age, setAge] = useState(0);
 
+    // the value in the useState parameter is the default value of the stateful variable
     const [isEmployed, setIsEmployed] = useState(false);
 
     const updateName = () => {
