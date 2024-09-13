@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(59, 59, 59);
+}
+
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button {
+  background-color: hsl(120, 100%, 30%);
+}
+
+.add-button:hover {
+  background-color: hsl(120, 100%, 20%);
+}
+
+.delete-button {
+  background-color: hsl(0, 100%, 34%);
+}
+
+.delete-button:hover {
+  background-color: hsl(0, 100%, 24%);
+}
+
+.move-button {
+  background-color: hsl(180, 100%, 25%);
+}
+
+.move-button:hover {
+  background-color: hsl(180, 100%, 15%);
+}
+
+input[type="text"] {
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsl(0, 0%, 40%);
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 95%);
+  margin-bottom: 10px;
+  border: 3px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  /* flex: 1;  Is the same as the 3 flex-* bellow */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.move-button,
+.delete-button {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
